@@ -1,3 +1,4 @@
+import 'package:fitness_application/common/font_style/text_style.dart%20';
 import 'package:flutter/material.dart';
 
 class PlannedScreen extends StatefulWidget {
@@ -10,6 +11,11 @@ class PlannedScreen extends StatefulWidget {
 class _PlannedScreenState extends State<PlannedScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    Text("Exercise", style: TextStyles.title);
+    return ListView.builder(
+      itemBuilder: (context, index) {
+        return Column(children: []);
+      },
+    );
   }
 }
